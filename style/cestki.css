@@ -1,0 +1,259 @@
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: black;
+    margin: unset;
+}
+
+header {
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	margin: auto;
+	width: 100%
+ }
+ 
+#bloc_page{
+	width: 900px;
+	margin: auto;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)
+	background-color: #6e6e6ff;
+}
+
+
+/* Banniere */
+	#banniere_image {
+		margin-top: 20px;
+		width: 1080px;
+		height:150px;
+		position: relative;
+		background: url('../images/cestki1080.png') no-repeat;
+		margin: auto;
+	}
+
+	#amen {
+		font-family: URW Chancery L, serif;
+		font-size: 2em;
+		font-weight: normal;
+		color: red;		
+		text-shadow: white 1px 1px 3px, white -1px 1px 3px, white -1px -1px 3px, white 1px -1px 3px;
+		position: relative;
+		left: 150px;
+		top: 20;
+	}
+	
+
+/* NavigatioN */
+	nav {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	
+
+	#articles {
+		display: inline-block;
+		vertical-align: top;
+		text-align: justify;
+	}
+
+	article {
+		width: 95%
+		font-size: 1.0em;
+		margin: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 4px 2px black;
+	}
+
+
+	aside {
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		background-color: white;
+		box-shadow: 0px 0px 4px 2px black;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 1.0em;
+	}
+	
+
+
+h1 {
+    position: relative;
+    font-family: serif, Arial, sans-serif;
+    font-size: 1.5em;
+    text-shadow: white 1px 1px 1px, black -1px 1px 1px, black -1px -1px 1px, white 1px -1px 1px;
+    text-align: center;
+}
+h2 {
+    position: relative;
+    font-family: serif, Arial, sans-serif;
+    font-size: 1.2em;
+    text-shadow: whte 1px 1px 1px, black -1px 1px 1px, clack -1px -1px 1px, white 1px -1px 1px;
+}
+
+
+table {
+	margin:auto;
+}
+ 
+ 
+nav ul {
+	display:inline-block;
+    list-style-type: none;
+    margin-left: -40px;
+}
+ 
+nav li {
+	text-align:center;
+    display: inline-block;
+	width:100px;
+}
+ 
+nav a {
+	color: black;
+    font-size: 1.3em;
+    text-decoration : none; 
+	text-shadow: white 1px 1px 3px, white -1px 1px 3px, white -1px -1px 3px, white 1px -1px 3px;
+}
+
+nav li ul { 
+    position: absolute;
+	display:block;
+    left: -999em; 
+}
+
+nav li ul li { 
+	display:block;
+}
+
+nav a:hover {
+	color: red;
+  text-shadow: white 1px 1px 3px, white -1px 1px 3px, white -1px -1px 3px, white 1px -1px 3px;
+}
+
+nav li:hover ul ul {
+       left: -999em; /* On expedie les sous-sous-listes hors du champ de vision */
+}
+
+nav li:hover ul, nav li li:hover ul, nav li.sfhover ul, nav li li.sfhover ul {
+	margin-left:-40px;
+	display:block;
+    left: auto; 
+    min-height: 0; /* Corrige un bug sous IE */
+}
+
+/* pour IE */
+html>body nav li {
+        border-right: 1px solid transparent ;
+}
+
+html>body nav li ul li {
+        border-top: 1px solid transparent; 
+}
+
+nav li ul ul {
+        margin: -22px 0 0 144px ;
+        border-left: 1px solid #fff ; 
+}
+
+html>body nav li ul ul {
+        border-left: 1px solid transparent ; 
+}
+
+
+a {
+	color:blue;
+}
+a:hover{
+	color: #00FFFF;
+	text-shadow: white 1px 1px 1px, white -1px 1px 1px, white -1px -1px 1px, white 1px -1px 1px;
+}
+a.kanjihover {
+    position:relative; /*this is the key*/
+    text-decoration:none;
+    text-shadow: none;
+}
+
+a.kanjihover span {
+	display: none
+}
+a.kanjihover h1 {
+	font-size: 2.5em;
+	text-decoration:none;
+    text-shadow: none;
+}
+a.kanjihover:hover span { /*le span s'affiche quand on passe la souris devant*/
+    display:block;
+    position:absolute;
+    top:20px;
+    left: 0px;
+	border:3px solid black;
+    background-color: white;
+	color: black;
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+	z-index:3;
+    text-shadow: none;
+}
+
+span.ImgHover {
+    position:relative; /*this is the key*/
+    text-decoration:none;
+    text-shadow: none;
+    display:inline-block; 
+    width:150px; 
+    text-align:center;
+    
+}
+span.ImgHover:hover {
+    text-decoration:none;
+	color: blue;
+	text-shadow: white 1px 1px 1px, white -1px 1px 1px, white -1px -1px 1px, white 1px -1px 1px;
+}
+span.ImgHover span {
+	display: none
+}
+
+span.ImgHover:hover span { /*le span s'affiche quand on passe la souris devant*/
+    display:block;
+    position:absolute;
+    top:20px;
+    left: 0px;
+	border:3px solid black;
+    background-color: white;
+	color: black;
+    text-align: center;
+    padding: 5px;
+	z-index:3;
+    text-shadow: none;
+}
+
+/* Jeux marbox */
+#marbox tr { background-image: url("../../js/bleu.png"); color: blue; border-collapse: collapse; }
+#marbox td { margin:0px; padding:0px; width:20px; height:20px;}
+#marbox table { margin:auto; border-collapse: collapse; }
+.green {background-image: url("../../js/vert.png"); color: green; }
+.red {background-image: url("../../js/rouge.png"); color: red;}
+.blue { color: blue; background-image: url("../../js/bleu.png");}
+.yellow {background: yellow; color: yellow;}
+.white {background: white; color: white;}
+.black {background: black; color: black;}
+.purple {background: purple; color: purple;}
+.b1 {background-image: url("../../js/b1.png");}
+.b2 {background-image: url("../../js/b2.png");}
+.b3 {background-image: url("../../js/b3.png");}
+.b4 {background-image: url("../../js/b4.png");}
+span.hover:hover {
+	color : red;
+	text-shadow: yellow 1px 1px 3px, white -1px 1px 3px, white -1px -1px 3px, white 1px -1px 3px;
+}
+/* footer */
+
+footer {
+	text-align: center;
+	padding: 10px;
+}
